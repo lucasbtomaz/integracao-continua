@@ -1,1 +1,2 @@
 # Adicionar quaisquer dependências do Python aqui
+requests

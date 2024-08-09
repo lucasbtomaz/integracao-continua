@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Resources:
+  LambdaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: 'ConversaoTemperaturaFunction'
+      Handler: 'handler.lambda_handler'
+      Runtime: 'python3.8'
+      CodeUri: .
+      Description: 'Função Lambda para conversão de temperatura'
+      MemorySize: 128
+      Timeout: 100
